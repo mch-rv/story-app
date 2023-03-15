@@ -1,0 +1,6 @@
+@use '../abstracts/mixins' as mix;
+@use 'sass:map';
+
+.card {
+    @include mix.bounce-shadow;
+}
