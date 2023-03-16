@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
   </head>
-  <body>
+  <body class="bg-slate">
+    <header>
+      <nav-app brandName="<%= brandName %>"></nav-app>
+    </header>
     <main class="min-vh-100 d-flex">
       <div class="m-auto container py-5">
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 col-lg-4">
-            <h1 class="text-center">Registrasi</h1>
+            <h1 class="text-center text-white">Registrasi</h1>
 
             <form id="registerForm" novalidate>
               <div class="mb-3">
-                <label for="validationCustomRecordName" class="form-label">Nama</label>
+                <label for="validationCustomRecordName" class="form-label text-white">Nama</label>
                 <input-with-validation
                   type="text"
                   inputId="validationCustomRecordName"
@@ -24,7 +27,7 @@
               </div>
 
               <div class="mb-3">
-                <label for="validationCustomEmail" class="form-label">Email</label>
+                <label for="validationCustomEmail" class="form-label text-white">Email</label>
                 <input-with-validation
                   type="email"
                   inputId="validationCustomEmail"
@@ -34,7 +37,7 @@
               </div>
 
               <div class="mb-3">
-                <label for="validationCustomPassword" class="form-label">Password</label>
+                <label for="validationCustomPassword" class="form-label text-white">Password</label>
                 <input-with-validation
                   type="password"
                   inputId="validationCustomPassword"
@@ -44,12 +47,12 @@
               </div>
 
               <div class="col-12 text-end">
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-orange text-white" type="submit">Submit</button>
               </div>
             </form>
 
-            <div class="mt-4 text-center">
-              Sudah punya akun? <a href="/auth/login.html">Login</a>
+            <div class="mt-4 text-center text-white">
+              Sudah punya akun? <a class="text-white" href="/auth/login.html">Login</a>
             </div>
           </div>
         </div>

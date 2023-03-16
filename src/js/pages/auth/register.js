@@ -26,9 +26,6 @@ const Register = {
     const formData = this._getFormData();
 
     if (this._validateFormData({ ...formData })) {
-      console.log('formData');
-      console.log(formData);
-
       try {
         await Auth.register({
           name: formData.name,
@@ -38,7 +35,7 @@ const Register = {
         window.alert('Registered a new user');
         this._goToLoginPage();
       } catch (error) {
-        console.error(error);
+        window.alert(error);
       }
     }
   },

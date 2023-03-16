@@ -28,7 +28,6 @@ const Dashboard = {
 
       const button = event.relatedTarget;
       const dataStory = this._userListStory.find((item) => item.id === button.dataset.storyId);
-      console.log(this._userListStory);
       this._populateDataToModal(dataStory);
     });
   },

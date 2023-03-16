@@ -17,6 +17,7 @@ const CheckUserAuth = {
       }
     } else if (!isUserOnAuthPage) {
       window.location.href = '/auth/login.html';
+      window.alert('Anda harus masuk terlebih dahulu!');
     }
   },
 

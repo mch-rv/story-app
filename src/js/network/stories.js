@@ -34,6 +34,18 @@ const Transactions = {
 
     return store;
   },
+
+  async storeGuest({ description, photo }) {
+    const data = { description, photo };
+
+    const storeGuest = await axios.post(ApiEndpoint.STORE_STORY_GUEST, data, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    });
+
+    return storeGuest;
+  },
 };
 
 export default Transactions;

@@ -61,6 +61,12 @@ module.exports = {
       template: path.resolve(__dirname, 'src/views/transactions/add.html'),
       ...htmlWebpackPluginConfig,
     }),
+    new HtmlWebpackPlugin({
+      title: 'Add Records As Guest',
+      filename: 'transactions/addGuest.html',
+      template: path.resolve(__dirname, 'src/views/transactions/addGuest.html'),
+      ...htmlWebpackPluginConfig,
+    }),
     // Auth pages
     new HtmlWebpackPlugin({
       title: 'Login',

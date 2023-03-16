@@ -9,12 +9,14 @@ import './components/index';
 import * as bootstrap from 'bootstrap';
 import Dashboard from './pages/dashboard';
 import Add from './pages/stories/add';
+import addGuest from './pages/stories/addGuest';
 import Login from './pages/auth/login';
 import Register from './pages/auth/register';
 
 const routes = {
   '/': Dashboard,
   '/transactions/add.html': Add,
+  '/transactions/addGuest.html': addGuest,
   '/auth/login.html': Login,
   '/auth/register.html': Register,
 };

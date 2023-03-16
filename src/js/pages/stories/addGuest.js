@@ -1,9 +1,7 @@
-import CheckUserAuth from '../auth/check-user-auth';
 import Stories from '../../network/stories';
 
-const Add = {
+const addGuest = {
   async init() {
-    CheckUserAuth.checkLoginState();
     this._initialListener();
   },
 
@@ -27,9 +25,9 @@ const Add = {
 
     if (this._validateFormData({ ...formData })) {
       try {
-        await Stories.store(formData);
+        await Stories.storeGuest(formData);
         window.alert('New transaction added successfully');
-        this._goToDashboardPage();
+        this._goToLoginPage();
       } catch (error) {
         console.error(error);
       }
@@ -52,9 +50,9 @@ const Add = {
     return formDataFiltered.length === 0;
   },
 
-  _goToDashboardPage() {
-    window.location.href = '/';
+  _goToLoginPage() {
+    window.location.href = '/auth/login.html';
   },
 };
 
-export default Add;
+export default addGuest;
