@@ -83,7 +83,7 @@ const Dashboard = {
 
   _templateBodyTable(userListStory) {
     return `
-    <div class="card d-block p-0 mb-3" style="width: 18rem;">
+    <div class="card d-block p-0 m-3" style="width: 18rem;">
     <img class="card-img-top" style="max-height: 10rem;" src=${userListStory.photoUrl} alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">${userListStory.name}</h5>
