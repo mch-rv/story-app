@@ -18,6 +18,6 @@
     "no-return-assign": "off",
     "import/no-extraneous-dependencies": "off",
     "global-require": "off",
-    "import/prefer-default-export":"off"
+    "import/prefer-default-export": "off"
   }
 }
