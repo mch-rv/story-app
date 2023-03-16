@@ -2,10 +2,12 @@
 @use 'sass:map';
 
 // Custom modules
-@use '../vendors-extensions/bootstrap/components/cards' as card;
+@use '../vendors-extensions/bootstrap/variables/shadows' as shadow;
 @use '../vendors-extensions/bootstrap/variables/colors' as color;
+@use '../vendors-extensions/bootstrap/variables/text' as text;
+@use '../vendors-extensions/bootstrap/components/cards' as card;
 @use '../vendors-extensions/bootstrap/components/modal' as modal;
-
+@use '../vendors-extensions/bootstrap/components/formselect' as formselect;
 // ==================================================
 // Bootstrap
 // ==================================================
@@ -25,6 +27,9 @@ $card-border-color: card.$card-border-color;
 $theme-colors: map.deep-merge($theme-colors, color.$theme-colors);
 $modal-content-bg: modal.$modal-content-bg;
 $modal-content-color: modal.$modal-content-color;
+$form-select-font-weight: formselect.$form-select-font-weight;
+$box-shadow-sm: shadow.$box-shadow-sm;
+$h1-font-size: text.$h1-font-size;
 //
 // Konfigurasi Bootstrap
 //
