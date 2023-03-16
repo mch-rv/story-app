@@ -8,7 +8,7 @@ import './components/index';
 // eslint-disable-next-line no-unused-vars
 import * as bootstrap from 'bootstrap';
 import Dashboard from './pages/dashboard';
-import Add from './pages/transactions/add';
+import Add from './pages/stories/add';
 import Login from './pages/auth/login';
 import Register from './pages/auth/register';
 

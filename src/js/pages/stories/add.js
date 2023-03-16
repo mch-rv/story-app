@@ -1,4 +1,5 @@
 import CheckUserAuth from '../auth/check-user-auth';
+import Stories from '../../network/stories';
 
 const Add = {
   async init() {
@@ -21,14 +22,20 @@ const Add = {
     );
   },
 
-  _sendPost() {
+  async _sendPost() {
     const formData = this._getFormData();
 
     if (this._validateFormData({ ...formData })) {
       console.log('formData');
       console.log(formData);
 
-      this._goToDashboardPage();
+      try {
+        await Stories.store(formData);
+        window.alert('New transaction added successfully');
+        this._goToDashboardPage();
+      } catch (error) {
+        console.error(error);
+      }
     }
   },
 
@@ -37,7 +44,7 @@ const Add = {
     const descriptionInput = document.querySelector('#validationCustomNotes');
 
     return {
-      story: storyInput.files[0],
+      photo: storyInput.files[0],
       description: descriptionInput.value,
     };
   },

@@ -1,4 +1,5 @@
 import CheckUserAuth from './auth/check-user-auth';
+import Stories from '../network/stories';
 
 const Dashboard = {
   async init() {
@@ -10,15 +11,12 @@ const Dashboard = {
 
   async _initialData() {
     try {
-      const fetchData = await fetch(
-        'https://raw.githubusercontent.com/dicodingacademy/a565-webtools-labs/099-shared-files/proyek-awal/DATA.json',
-      );
-      const responseData = await fetchData.json();
-      this._userListStory = responseData.listStory;
+      const responseData = await Stories.getAll();
+      this._userListStory = responseData.data.listStory;
       this._populateDataToCard(this._userListStory);
       this._populateDataToSummary(this._userListStory);
     } catch (error) {
-      window.alert(error);
+      console.error(error);
     }
   },
 
@@ -100,7 +98,7 @@ const Dashboard = {
 
   _templateEmptyBodyTable() {
     return `
-      <h2>Tidak Ada Story<h2>
+      <h2 class="text-white">Tidak Ada Story<h2>
     `;
   },
 };
