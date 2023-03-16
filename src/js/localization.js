@@ -21,4 +21,5 @@ export const setLocaleFromUrl = async () => {
 export const localeNames = {
   en: 'Inggris',
   id: 'Indonesia',
+  jp: 'Japan',
 };

@@ -1,7 +1,8 @@
 import './CardDashboard';
 import './ButtonLink';
-import './ModalTransaction';
+import './ModalStory';
 import './NavApp';
+import './NavLogo';
 import './NavLinks';
 import './NavLink';
 import './NavLinkAuth';
