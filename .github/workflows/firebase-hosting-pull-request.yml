@@ -12,4 +12,5 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STORY_APP_2B9CD }}'
+          channelId: live
           projectId: story-app-2b9cd
