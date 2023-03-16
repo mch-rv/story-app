@@ -8,7 +8,6 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - run: npm install && npm run build:prod
       - uses: actions/checkout@v2
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -16,3 +15,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STORY_APP_2B9CD }}'
           projectId: story-app-2b9cd
       - run: npm run deploy
+      - run: npm install && npm run build:prod
