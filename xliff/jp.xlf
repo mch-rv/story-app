@@ -4,30 +4,39 @@
 <body>
 <trans-unit id="sef49b2c68fd1e332">
   <source>Nama</source>
+  <target>名前</target>
 </trans-unit>
 <trans-unit id="s772ce5f935d58e37">
   <source>Deskripsi</source>
+  <target>説明</target>
 </trans-unit>
 <trans-unit id="sc72cca9281ef6073">
   <source>Tanggal</source>
+  <target>日にち</target>
 </trans-unit>
 <trans-unit id="s749c72374d54863f">
   <source>Tutup</source>
+  <target>閉まっている</target>
 </trans-unit>
 <trans-unit id="sf9a862bfd829397e">
   <source>Dasbor</source>
+  <target>ダッシュボード</target>
 </trans-unit>
 <trans-unit id="s8d9d6501de2bbd98">
   <source>Tambah Data</source>
+  <target>データを追加</target>
 </trans-unit>
 <trans-unit id="s45dab30b4d2d3c14">
   <source>Masuk</source>
+  <target>ログイン</target>
 </trans-unit>
 <trans-unit id="s229fb4df9ecf3ed1">
   <source>Keluar</source>
+  <target>ログイン</target>
 </trans-unit>
 <trans-unit id="se296c068d76c3b02">
   <source>Dibuat dengan ❤ oleh Mochammad Ravly</source>
+  <target>❤で作られました Mochammad Ravly</target>
 </trans-unit>
 </body>
 </file>
