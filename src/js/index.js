@@ -5,9 +5,10 @@ import '../scss/main.scss';
 import './components/index';
 
 // Import javascript file as needed
+// eslint-disable-next-line no-unused-vars
+import * as bootstrap from 'bootstrap';
 import Dashboard from './pages/dashboard';
 import Add from './pages/transactions/add';
-import * as bootstrap from 'bootstrap';
 
 const routes = {
   '/': Dashboard,

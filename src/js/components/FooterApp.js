@@ -1,6 +1,6 @@
-import LitWithoutShadowDom from './base/LitWithoutShadowDom';
 import { html } from 'lit';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
+import LitWithoutShadowDom from './base/LitWithoutShadowDom';
 
 class FooterApp extends LitWithoutShadowDom {
   constructor() {

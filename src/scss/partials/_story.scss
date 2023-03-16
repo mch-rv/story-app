@@ -2,5 +2,5 @@
 @use 'sass:map';
 
 .card {
-    @include mix.bounce-shadow;
+  @include mix.bounce-shadow;
 }

@@ -1,7 +1,7 @@
 import { html } from 'lit';
-import { allLocales } from '../../../generated/locale-codes';
 import { updateWhenLocaleChanges } from '@lit/localize';
-import { getLocale, localeNames, setLocaleFromUrl } from '../../localization.js';
+import { allLocales } from '../../../generated/locale-codes';
+import { getLocale, localeNames, setLocaleFromUrl } from '../../localization';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
 
 class LocalePicker extends LitWithoutShadowDom {
@@ -13,13 +13,13 @@ class LocalePicker extends LitWithoutShadowDom {
   render() {
     return html`
       <select class="form-select w-auto m-auto bg-orange text-white" @change=${this._localeChanged}>
-        ${allLocales.map((locale) => {
-          return html`
+        ${allLocales.map(
+          (locale) => html`
             <option class="bg-white text-dark" value=${locale} ?selected=${locale === getLocale()}>
               ${localeNames[locale]}
             </option>
-          `;
-        })}
+          `,
+        )}
       </select>
     `;
   }

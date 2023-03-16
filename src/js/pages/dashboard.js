@@ -25,9 +25,7 @@ const Dashboard = {
       modalTitle.focus();
 
       const button = event.relatedTarget;
-      const dataStory = this._userListStory.find((item) => {
-        return item.id == button.dataset.storyId;
-      });
+      const dataStory = this._userListStory.find((item) => item.id === button.dataset.storyId);
       console.log(this._userListStory);
       this._populateDataToModal(dataStory);
     });
@@ -35,7 +33,7 @@ const Dashboard = {
 
   _populateDataToSummary(userListStory = null) {
     if (!(typeof userListStory === 'object')) {
-      throw new Error(`Parameter userListStory should be an object.`);
+      throw new Error('Parameter userListStory should be an object.');
     }
 
     if (!Array.isArray(userListStory)) {
