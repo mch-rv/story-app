@@ -10,14 +10,16 @@
       <nav-app brandName="<%= brandName %>"></nav-app>
     </header>
 
-    <main>
+    <main class="bg-slate">
       <div class="main-content">
         <div class="container py-5">
-          <h1 class="mb-3">Tambah Story</h1>
+          <h1 class="mb-3 text-white">Tambah Story</h1>
 
           <form class="row g-3" id="addStoryForm" novalidate>
             <div class="col-12 col-md-6">
-              <label for="validationCustomEvidence" class="form-label">Input Story</label>
+              <label for="validationCustomEvidence" class="form-label text-white"
+                >Input Story</label
+              >
               <input-image-with-preview
                 inputId="validationCustomEvidence"
                 invalidFeedbackMessage="Wajib diisi"
@@ -26,7 +28,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-              <label for="validationCustomNotes" class="form-label">Catatan</label>
+              <label for="validationCustomNotes" class="form-label text-white">Catatan</label>
               <textarea-with-validation
                 inputId="validationCustomNotes"
                 invalidFeedbackMessage="Wajib diisi"
