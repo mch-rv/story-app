@@ -3,7 +3,7 @@ import Config from '../config/config';
 import Utils from '../utils/utils';
 import ApiEndpoint from '../config/api-endpoint';
 
-const Transactions = {
+const Stories = {
   async getAll() {
     const getAll = await axios.get(ApiEndpoint.GET_STORY, {
       headers: {
@@ -48,4 +48,4 @@ const Transactions = {
   },
 };
 
-export default Transactions;
+export default Stories;
